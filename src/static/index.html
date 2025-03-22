@@ -100,6 +100,23 @@
             option.textContent = name;
             activitySelect.appendChild(option);
           });
+
+          // Add Chess Club activity card
+          const chessClubCard = document.createElement("div");
+          chessClubCard.className = "activity-card";
+          chessClubCard.innerHTML = `
+            <h4>Chess Club</h4>
+            <p>Learn strategies and compete in chess tournaments</p>
+            <p><strong>Schedule:</strong> Fridays, 3:30 PM - 5:00 PM</p>
+            <p><strong>Availability:</strong> 10 spots left</p>
+            <hr>
+            <h5>Current Participants:</h5>
+            <ul>
+              <li>michael@mergington.edu</li>
+              <li>daniel@mergington.edu</li>
+            </ul>
+          `;
+          activitiesList.appendChild(chessClubCard);
         } catch (error) {
           activitiesList.innerHTML = "<p>Failed to load activities. Please try again later.</p>";
           activitySelect.innerHTML = '<option value="">-- Select an activity --</option>';

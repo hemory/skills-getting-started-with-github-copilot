@@ -59,60 +59,72 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
+  padding: 20px;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  border-radius: 8px;
+  background-color: white;
   position: relative;
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+  margin-bottom: 15px;
+  color: #0066ff;
+  font-size: 24px;
 }
 
 .activity-card p {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  color: #666;
+  font-size: 16px;
+}
+
+/* Add separator line */
+.activity-card hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px dashed #ddd;
+}
+
+/* Style for participants section */
+.activity-card h5 {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .activity-card ul {
   margin-top: 10px;
-  padding: 10px;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  list-style-type: none; /* Remove bullets */
+  padding: 0;
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
 .activity-card ul li {
-  background-color: #e3f2fd;
-  color: #1a237e;
-  padding: 5px 10px;
-  border-radius: 15px;
+  background-color: #f0f2f5;
+  color: #666;
+  padding: 8px 16px;
+  border-radius: 4px;
   font-size: 14px;
-  border: 1px solid #90caf9;
-  white-space: nowrap; /* Prevent text wrapping */
+  border: none;
+  white-space: nowrap;
+}
+
+/* Remove previous hover styles */
+.activity-card:hover {
+  background-color: white;
+  border-color: #ddd;
+}
+
+/* Remove previous separator styles */
+.activity-card .separator {
+  display: none;
 }
 
 .activity-card p strong {
   color: #1a237e;
   font-weight: bold;
-}
-
-/* Add hover effect for activity cards */
-.activity-card:hover {
-  background-color: #e3f2fd;
-  border-color: #90caf9;
-  transition: background-color 0.3s, border-color 0.3s;
-}
-
-/* Add a dashed separator for better visual structure */
-.activity-card .separator {
-  border-top: 1px dashed #ddd;
-  margin: 10px 0;
 }
 
 .form-group {
