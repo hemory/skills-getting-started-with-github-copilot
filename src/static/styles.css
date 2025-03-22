@@ -63,6 +63,7 @@ section h3 {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  position: relative;
 }
 
 .activity-card h4 {
@@ -80,13 +81,20 @@ section h3 {
   background-color: #f1f1f1;
   border-radius: 5px;
   border: 1px solid #ddd;
-  list-style-type: disc;
+  list-style-type: none; /* Remove bullets */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .activity-card ul li {
-  margin-bottom: 5px;
-  color: #333;
+  background-color: #e3f2fd;
+  color: #1a237e;
+  padding: 5px 10px;
+  border-radius: 15px;
   font-size: 14px;
+  border: 1px solid #90caf9;
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
 .activity-card p strong {
@@ -99,6 +107,12 @@ section h3 {
   background-color: #e3f2fd;
   border-color: #90caf9;
   transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Add a dashed separator for better visual structure */
+.activity-card .separator {
+  border-top: 1px dashed #ddd;
+  margin: 10px 0;
 }
 
 .form-group {
